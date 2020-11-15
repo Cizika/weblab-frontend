@@ -55,12 +55,12 @@ function AcessarConteudo(props: { array: any; }) {
                     } else {
                         if (conteudo.type === 'image') {
                             return (
-                                <img className='mr-auto ml-auto d-block img-fluid' key={conteudo._id} src={`http://localhost:3333/files/${conteudo.source}`} alt="image" />
+                                <img className='mr-auto ml-auto d-block img-fluid' key={conteudo._id} src={`https://weblab-backend.herokuapp.com/files/${conteudo.source}`} alt="image" />
                             )
                         } else {
                             return (
                                 <div className='embed-responsive embed-responsive-16by9'>
-                                    <iframe src={`http://localhost:3333/files/${conteudo.source}`} className='embed-responsive-item'></iframe>
+                                    <iframe src={`https://weblab-backend.herokuapp.com/files/${conteudo.source}`} className='embed-responsive-item'></iframe>
                                 </div>
                             )
                         }

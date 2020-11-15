@@ -66,7 +66,7 @@ class CursosCriadosAcessarPerfil extends Component<{}, State> {
                         response.map(curso => (
                                 <div className='col-sm-12 col-md-4 mt-2'>
                                 <Card id="cardCursos">
-                                    <Card.Img variant='top' src={"http://localhost:3333/files/" + curso.thumbnail} />
+                                    <Card.Img variant='top' src={"https://weblab-backend.herokuapp.com/files/" + curso.thumbnail} />
                                     <Card.Body>
                                         <Card.Title>{curso.name}</Card.Title>
                                         <Card.Text>
