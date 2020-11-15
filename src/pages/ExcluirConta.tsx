@@ -39,9 +39,7 @@ class ExcluirConta extends React.Component<{}, { email: string, password: string
                 "password": password
             },
             {
-                headers: {
-                    'authorization': token
-                }
+                headers: myHeaders
             }
         )
             .then(function (response) {
