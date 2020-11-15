@@ -1,0 +1,33 @@
+.menu-item {
+    padding: 0 40 0 0px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+  }
+  /* .menu-item-wrapper.active {
+    border: 1px blue solid;
+  }
+  .menu-item.active {
+    border: 1px green solid;
+  } */
+   
+  .scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+  }
+  #cardCursos{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 6px 0px rgb(197, 194, 194);
+  }
+  #barraProgresso{ 
+    background-color:rgb(223, 217, 217);
+
+}
+#categoriasId{
+  margin-left:4px;
+  border-radius: 3px;
+  background-color: whitesmoke;
+
+}

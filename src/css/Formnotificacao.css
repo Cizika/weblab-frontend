@@ -1,0 +1,21 @@
+
+  input#inputAssunto{
+    border-radius: 8px;
+    padding: 8px 10px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 18px ;
+    font-weight: lighter;
+    background-color: rgb(243, 236, 236);
+  }
+  
+  textarea{
+    border-radius: 8px;
+    padding: 8px 10px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 18px ;
+    font-weight: lighter;
+    background-color: rgb(243, 236, 236);
+    border: none;
+  }

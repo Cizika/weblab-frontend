@@ -1,0 +1,85 @@
+.conteudo{
+    margin: 10px;
+}
+
+.containerCurso {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgCurso{
+    padding: 0px;
+    width: 46%;
+    align-self: flex-start;
+}
+
+.tituloCurso{
+    padding-left: 70px;
+}
+
+.descricaoCurso{
+    width: 46%;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 320px) {
+    .containerCurso {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .imgCurso{
+        padding: 0px;
+        width: 80%;
+        align-self: flex-start;
+    }
+    
+    .tituloCurso{
+        padding-left: 20px;
+    }
+    
+    .descricaoCurso{
+        width: 90%;
+        font-size: 20px;
+    }
+  }
+   
+  @media (max-width: 430px) {
+    .conteudo{
+        margin: 10px;
+    }
+    
+    .containerCurso {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .imgCurso{
+        padding: 0px;
+        width: 100%;
+        align-self: flex-start;
+    }
+    
+    .tituloCurso{
+        padding-left: 20px;
+    }
+    
+    .descricaoCurso{
+        width: 90%;
+        font-size: 20px;
+   
+    }
+  }
+  

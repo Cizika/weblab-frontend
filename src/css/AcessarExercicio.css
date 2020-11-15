@@ -1,0 +1,23 @@
+.exercicio {
+    background-color: #d2d2d2;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.alternativa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    margin: 5px;
+    font-size: 25px;
+}
+
+@media (min-width: 768px) {
+    .exercicio {
+        width: 80%;
+    }
+}

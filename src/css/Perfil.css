@@ -1,0 +1,82 @@
+#content {
+    height: 100vh;
+}
+
+#imgPerfil {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    #imgPerfil {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #imgPerfil {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+    #imgPerfil {
+        width: 30%;
+    }
+}
+
+.botaoPerfil{
+    background-color: #1E3E59;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#botaoAlt{
+    margin-right:5px;
+}
+a.botaoPerfil:hover{
+    color: white;
+text-decoration: none;
+background-color: #17344d;
+
+}
+#secao2perfil{
+    margin-top:10px;
+}
+#secao1perfil{
+    margin-top:10px;
+}
+
+#tituloSelect{
+    margin-top:10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+#selectUserTitle{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:4px;
+    border-radius: 3px;
+    border-color:  #1E3E59;
+    background-color: whitesmoke;
+    text-align:center;
+    font-size: 17px;
+    height: 30px;
+    width: 20%;
+    font-weight: 600;
+    color:  #1E3E59;
+}
+#optionSelect{
+    font-size: 17px;
+    font-weight: 600;
+    color:  #1E3E59; 
+}
+#optionSelect:hover{
+    background-color:  #1E3E59;  
+    color: whitesmoke;
+}
+

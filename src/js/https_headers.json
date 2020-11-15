@@ -1,0 +1,8 @@
+{
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Content-Security-Policy": "default-src *; media-src *; img-src *; script-src *",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "no-referrer",
+    "Permissions-Policy": "oversized-images=*, geolocation=(), camera=*, microphone=*"
+}

@@ -1,0 +1,135 @@
+body {
+    background-color: #f2f2f2;
+}
+
+p {
+  font-size: 20px;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  /* height: 100vh; */
+  align-items: stretch;
+}
+
+
+#title {
+  font-size: 25px;
+}
+
+#content {
+  width:100%;
+  height:100%;
+} 
+
+#sidebar {
+  min-height: 900px;
+  font-size: 18px;
+  height: auto; 
+  min-width: 250px;
+  /* max-width: 250px; */
+  background: #1E3E59;
+  color: #fff;
+  transition: all 0.3s;
+}
+/* 
+#sidebar {
+  font-size: 18px;
+  height: 100vh;
+  min-width: 250px; */
+  /* max-width: 250px; */
+  /* background: #1E3E59;
+  color: #fff;
+  transition: all 0.3s; */
+/* } */
+
+/* #sidebar{
+  height: 970px
+} */
+
+.swal-text {
+  text-align: center;
+}
+
+/* .swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: 1px solid #3e549a;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+} */
+
+.bg-orange {
+    background-color: #F24F13;
+  }
+  
+.bg-blue {
+   background-color: #1E3E59;
+}
+  
+.no-bg {
+  background-color: transparent;
+  border: none;
+}
+
+.text-blue {
+  color: #1E3E59;
+}
+
+.title-blue {
+  color: #1E3E59;
+  font-weight: bold;
+}
+
+input#inputPesquisar{
+  background-color: white;
+  width: 500px;  
+  height: 100%;
+  margin-top: 10px;
+}
+
+#botaoPesquisa{
+  background-color: #1E3E59;
+  font-size: 20px;
+ 
+  color:white;
+  width: 40px;  
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 2px;
+ text-align: center;
+  }
+
+@media (min-width: 320px) {
+  input#inputPesquisar{
+    background-color: white;
+    width: 210px;  
+    height: 100%;
+    margin-top: 10px;
+  }
+
+}
+ 
+@media (min-width: 375px) {
+  input#inputPesquisar{
+    background-color: white;
+    width: 300px;  
+    height: 100%;
+    margin-top: 10px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  input#inputPesquisar{
+    background-color: white;
+    width: 300px;  
+    height: 100%;
+    margin-top: 10px;
+  }
+
+}
+
+

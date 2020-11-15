@@ -1,0 +1,59 @@
+label#thumbnail {
+    margin-bottom: 20px;
+    border: 1px dashed  #1E3E59; ;
+    background-size: cover;
+    cursor: pointer;
+    height: 150px;
+    width: 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tituloForm
+{
+  font-size: 24px ;
+  color: #1E3E59;
+  padding-top: 20px;
+}
+
+#box3{
+
+  width: 90%;
+  font-size: 18px ;
+  font-weight: 520;
+  color: #1E3E59;
+}
+label#thumbnail input {
+    display: none;
+}
+#descricaoCurso{
+  width:90%;
+  border:none;
+}
+label#thumbnail.has-thumbnail i{
+    display: none;
+  }
+  #categoriaCurso{
+    border-radius: 5px;
+    padding: 6px 10px;
+    width: 40%;
+    margin-bottom: 12px;
+    font-size: 18px ;
+     border: none; 
+    font-weight: lighter;
+    border-radius: 2px; 
+    background-color: white;
+}
+  input#nomeCurso, #descricaoCurso{
+    border-radius: 8px;
+    padding: 8px 10px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 18px ;
+    font-weight: lighter;
+    background-color: white;
+  }
+  #categoriaCurso{
+    border-radius: 8px;
+    margin-left: 6px;
+  }
