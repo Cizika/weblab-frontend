@@ -5,8 +5,10 @@ import Button from 'react-bootstrap/Button';
 import '../css/MenuCursos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 import https_headers from '../js/https_headers.json';
+import Swal from 'sweetalert2';
+import Trofeu from '../img/trofeu.png'
 
 interface State {
     response: any[],
@@ -65,7 +67,13 @@ class MenuCursos extends Component<{}, State> {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 
@@ -85,7 +93,13 @@ class MenuCursos extends Component<{}, State> {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 

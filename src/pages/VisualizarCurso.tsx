@@ -11,8 +11,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookReader } from '@fortawesome/free-solid-svg-icons';
 import { Card } from 'react-bootstrap';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 import https_headers from '../js/https_headers.json';
+import Swal from 'sweetalert2';
+import Trofeu from '../img/trofeu.png'
 
 interface ModuleRouteParams {
     id: string
@@ -67,7 +69,13 @@ function VisualizarCurso() {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 
@@ -87,7 +95,13 @@ function VisualizarCurso() {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 
@@ -107,7 +121,13 @@ function VisualizarCurso() {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 
@@ -127,7 +147,13 @@ function VisualizarCurso() {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 
@@ -147,7 +173,13 @@ function VisualizarCurso() {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 
@@ -167,7 +199,13 @@ function VisualizarCurso() {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 

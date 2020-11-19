@@ -28,7 +28,7 @@ export default function Routes() {
                 <Route path="/cadastro" exact component={Cadastro} />
                 <Route path="/cursos" exact component={Cursos} />
                 <Route path="/acessarCurso/:id" component={AcessarCurso} />
-                <Route path='/curso/:id' component={VisualizarCurso} />
+                <Route path='/curso/visualizar/:id' component={VisualizarCurso} />
                 <Route path="/curso/criar" exact component={CriarCurso} />
                 <Route path="/modulo/criar" exact component={CriarModulo} />
                 <Route path="/modulo/conteudo/:id" component={AcessarModulo} />

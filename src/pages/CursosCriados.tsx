@@ -75,7 +75,7 @@ class CursosCriados extends Component<{}, State> {
                                         </Card.Text>
                                     </Card.Body>
                                     <Card.Body>
-                                        <Button variant="primary bg-blue"  className='mt-2' onClick={() => window.location.href=`/curso/${curso.id}`}>Acessar curso</Button>
+                                        <Button variant="primary bg-blue"  className='mt-2' onClick={() => window.location.href=`/curso/visualizar/${curso.id}`}>Acessar curso</Button>
                                     </Card.Body>
                                 </Card>
                             </div>

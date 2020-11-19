@@ -5,6 +5,8 @@ import '../css/AcessarCurso.css';
 import Cookies from 'universal-cookie';
 import swal from 'sweetalert';
 import https_headers from '../js/https_headers.json';
+import Swal from 'sweetalert2';
+import Trofeu from '../img/trofeu.png'
 
 //dois atributos, curso (com dados do curso) e isSubscribed
 class AcessarCurso extends Component {
@@ -88,7 +90,13 @@ class AcessarCurso extends Component {
                 if (res.data.error) {
                     console.log(res.data.error)
                 } else {
-                    swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    // swal("Parabéns!", "Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n" + res.data.achievement.description)
+                    Swal.fire({
+                        title: 'Conquista desbloqueada!',
+                        html: "Parabéns! Você desbloqueou a conquista '" + res.data.achievement.name + "'!\n<br>" + res.data.achievement.description,
+                        imageUrl: Trofeu,
+                        imageAlt: 'Troféu',
+                    })
                 }
             })
 
@@ -135,7 +143,7 @@ class AcessarCurso extends Component {
 
         if (isSubscribed) {
             button = <Button variant="primary bg-blue" onClick={this.handleUnsubscribe}>Cancelar inscrição</Button>;
-            buttonAcessar = <Button variant="primary bg-blue" onClick={() => window.location.href = `/curso/${curso.id}`}>Acessar Curso</Button>
+            buttonAcessar = <Button variant="primary bg-blue" onClick={() => window.location.href = `/curso/visualizar/${curso.id}`}>Acessar Curso</Button>
         } else {
             button = <Button variant="primary bg-blue" onClick={this.handleSubscribe}>Inscrever-se</Button>;
         }
@@ -147,7 +155,7 @@ class AcessarCurso extends Component {
 
                     <div className="containerCurso">
 
-                        {/* <img className="imgCurso" src={"http://localhost:3333/files/" + curso.thumbnail} alt="Thumbnail"></img> */}
+                        {/* <img className="imgCurso" src={"https://weblab-backend.herokuapp.com/files/" + curso.thumbnail} alt="Thumbnail"></img> */}
                         <img className="imgCurso" src={curso.thumbnail_url} alt="Thumbnail"></img>
 
                         <div className="descricaoCurso">

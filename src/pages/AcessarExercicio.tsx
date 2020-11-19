@@ -90,11 +90,11 @@ function AcessarExercicio(props: { array: any; }) {
         }).then(res => {
             if (res.data.error) {
                 swal(res.data.error).then(function(){ 
-                    window.location.href = `/curso/${course_id}`
+                    window.location.href = `/curso/visualizar/${course_id}`
                 });
             } else {
                 swal('Módulo completo!').then(function(){ 
-                    window.location.href=`/curso/${course_id}`
+                    window.location.href=`/curso/visualizar/${course_id}`
                 });
             }
         })

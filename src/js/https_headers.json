@@ -1,4 +1,5 @@
 {
+    "Access-Control-Allow-Origin": "*",
     "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
     "Content-Security-Policy": "default-src *; media-src *; img-src *; script-src *",
     "X-Frame-Options": "SAMEORIGIN",
