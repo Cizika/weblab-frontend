@@ -17,7 +17,9 @@ import CriarConteudo from './pages/CriarConteudo';
 import ExcluirConta from './pages/ExcluirConta';
 import FormNotificacao from './pages/FormNotificacao';
 import ResultadoPesquisa from './pages/ResultadoPesquisa';
-import AlterarPerfil from './pages/AlterarPerfil'
+import AlterarPerfil from './pages/AlterarPerfil';
+import SobreNos from './pages/SobreNos';
+import AboutUs from './pages/AboutUs';
 
 export default function Routes() {
     return (
@@ -40,6 +42,8 @@ export default function Routes() {
                 <Route path="/notificar" exact component={FormNotificacao} />
                 <Route path="/acessarPerfil" exact component={AcessarPerfil} />
                 <Route path="/resultadoPesquisa" exact component={ResultadoPesquisa} />
+                <Route path="/sobre" exact component={SobreNos} />
+                <Route path="/about" exact component={AboutUs} />
             </BrowserRouter>
         </CookiesProvider>
 

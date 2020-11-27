@@ -85,6 +85,12 @@ class App extends React.Component<{}, { pesquisa: string }> {
                             <li>
                                 <a href="/cursos">Cursos disponíveis</a>
                             </li>
+                            <li>
+                                <a href="/sobre">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="/about">About us</a>
+                            </li>
                             <div className='d-none' id='menuSessao'>
                                 <li>
                                     <a href="/perfil">Perfil</a>
