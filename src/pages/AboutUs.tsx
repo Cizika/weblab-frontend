@@ -3,7 +3,18 @@ import MetaTags from 'react-meta-tags';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/About.css';
 
+function updateDocumentLanguage(lang) {
+	window.document.documentElement.lang = lang;
+}
 class AboutUs extends Component {
+    componentDidMount() {
+		updateDocumentLanguage('en-us');
+	}
+
+	componentDidUpdate() {
+		updateDocumentLanguage('en-us');
+	}
+
     render() {
         return (
             <div className="aboutContent" lang='en-us'>

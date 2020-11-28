@@ -101,9 +101,10 @@ function AcessarExercicio(props: { array: any; }) {
     }
 
     const exibirExercicios = () => {
-        var tests = [];
+        var tests: any = [];
         for (let i = 0; i < exercicios.length; i++) {
             tests.push(
+                <>
                 <div className='exercicio mb-4'>
                     <p style={{fontSize:"25px"}}>{exercicios[i].question}</p>
 
@@ -119,6 +120,7 @@ function AcessarExercicio(props: { array: any; }) {
                             </>
                         )}
                 </div>
+                </>
             )
         }
 

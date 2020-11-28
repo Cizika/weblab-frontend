@@ -190,7 +190,7 @@ class MenuCursos extends Component<{}, State> {
     }
 
     handleCursos(cursos: any) {
-        let cursosTemp = []
+        let cursosTemp: any = []
         for (let curso of cursos) {
             cursosTemp.push(curso)
         }
