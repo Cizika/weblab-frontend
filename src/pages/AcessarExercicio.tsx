@@ -53,12 +53,12 @@ function AcessarExercicio(props: { array: any; }) {
         loadConteudos();
     }, [props.array])
 
-    const checkAnswer = (id: string, indice: number) => {
+    const checkAnswer = (id: string, answer: string, indice: number) => {
         let isCorrect = false;
         let counterJ = 0;
 
         for (let j = 0; j < exercicios[indice].answers.length; j++) {
-            if (exercicios[indice].answers[j].replace(/\s/g, "").toLowerCase() == id) {
+            if (exercicios[indice].answers[j].replace(/\s/g, "").toLowerCase() == answer) {
                 counterJ = j;
             }
         }
@@ -66,6 +66,8 @@ function AcessarExercicio(props: { array: any; }) {
         if (exercicios[indice].correct_answer === counterJ) {
             isCorrect = true;
         }
+
+        console.log(`#${id}`)
 
         if (isCorrect) {
             $(`#${id}`).css('background-color', '#87ff8f')
@@ -109,9 +111,9 @@ function AcessarExercicio(props: { array: any; }) {
                     <p style={{fontSize:"25px"}}>{exercicios[i].question}</p>
 
                         {exercicios[i].answers.length > 0 ? (
-                            exercicios[i].answers.map((answer: any) => (
+                            exercicios[i].answers.map((answer: any, j: any) => (
                                 <>
-                                <Button variant='light' className='alternativa' id={answer.replace(/\s/g, "").toLowerCase()} onClick={() => checkAnswer(answer.replace(/\s/g, "").toLowerCase(), i)}> {answer} <FontAwesomeIcon icon={faCheckCircle}/> </Button>
+                                <Button variant='light' className='alternativa' id={"ex" + i + "ans" + j} onClick={() => checkAnswer("ex" + i + "ans" + j, answer.replace(/\s/g, "").toLowerCase(), i)}> {answer} <FontAwesomeIcon icon={faCheckCircle}/> </Button>
                                 <br/>    
                                 </> 
                             ))
